@@ -209,6 +209,11 @@ Then **restart** your terminal again (close it and reopen it).
 ruby -v
 ```
 
+**NOTE**: If you have an Apple Silicon chip (M1, M1 Pro, M1 Max) and you try to install legacy Ruby versions, it might fail. You need a little trick on the `rbenv install` command, for example, to install Ruby 2.5.5:
+
+```bash
+RUBY_CFLAGS="-Wno-error=implicit-function-declaration" rbenv install 2.5.5
+```
 
 ### Installing some gems
 
