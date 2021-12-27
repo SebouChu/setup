@@ -234,3 +234,11 @@ Run the following commands:
 sudo apt install -y postgresql postgresql-contrib libpq-dev
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
+
+## ActiveStorage Preview libraries
+
+In Rails applications, we use ActiveStorage to upload files to services like Amazon S3, GCS, etc. To display video and PDF previews, we need FFmpeg and Poppler.
+
+```bash
+sudo apt install -y ffmpeg poppler-utils
+```
