@@ -307,3 +307,11 @@ postgres=#
 ```
 
 To quit it, type `\q` then `Enter`.
+
+## ActiveStorage Preview libraries
+
+In Rails applications, we use ActiveStorage to upload files to services like Amazon S3, GCS, etc. To display video and PDF previews, we need FFmpeg and Poppler.
+
+```bash
+brew install ffmpeg poppler
+```
